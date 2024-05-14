@@ -148,6 +148,7 @@ while height > 0:
     height -= 1
 
 # Bài 3: In tam giác vuông xen kẽ * và -
+# Cách 1:
 height = int(input("Nhập chiều cao của tam giác: "))
 while height > 0:
     line = ''
@@ -158,6 +159,14 @@ while height > 0:
             line += '-'
     print(line)
     height -= 1
+# Cách 2: 
+height = int(input("Please input height: "))
+
+i = height
+
+while i >= 1:
+    print (('* - ' * (i // 2) + '*' * (i % 2)).strip())
+    i -= 1
 
 # Bài 4: In các số từ 1 đến n với các quy tắc đặc biệt
 n = int(input("Nhập vào số nguyên n: "))
@@ -187,8 +196,6 @@ if num > 1:
         print(num, "là số nguyên tố")
     else:
         print(num, "không phải là số nguyên tố")
-else:
-    print(num, "không phải là số nguyên tố")
 
 # Bài 6: Trò chơi kéo búa bao
 import random
